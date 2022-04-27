@@ -1,104 +1,69 @@
 "use strict";
 
-// for (let i = 5; i <= 10; i++) {
-//     console.log(i);
-// }
+// Домашка
+
+// const film = +prompt('Сколько посмотрели фильмов?', '');
+
+// const personaMpvieDB = {
+//     count: film,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false,
+// };
 
 
-// let lengthResult = 10;
-// for (let i = 20; i >= lengthResult; i--) {
-//     console.log(i);
-//     if (i === 13) {
-//         break;
-//     }
-// }
+// for (let i = 0; i < 2; i++) {
 
-// let number = 0;
-// for (let i = 2; i <= 10; i++) {
-//     if (i % 2 === 0) {
-//         console.log(i);
-//     }
-// }
-// let i = 2;
-// while (i <= 16) {
-//     if (i % 2 === 0) {
-//         i++;
-//         continue;
+//     const One = prompt('Какой смотрели фильм?', '');
+//     const Two = prompt('Сколько раз его смотрели?', '');
+
+//     if (One != null && One != ' ' && One.length < 10 && Two != null && Two != ' ' && Two.length < 10) {
+//         console.log('Успешно');
+//         personaMpvieDB.movies[One] = Two;
 //     } else {
-//         console.log(i);
-//     }
-//     i++;
-// }
-
-// for (let i = 2; i <= 16; i++) {
-//     if (i % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(i);
-//         i++;
-//     }
-
-
-// const arr = [];
-// for (let i = 5; i <= 10; i++) {
-//     arr[i - 5] = i;
-// }
-
-// console.log(arr);
-
-// const arr = [5, 6, 7, 8, 9, 10];
-// const result = [];
-
-// for (let i = 0; i < arr.length; i++) {
-//     result[i] = arr[i];
-// }
-
-// console.log(result);
-
-
-// const data = [5, 10, 'Shopping', 20, 'Homework'];
-
-// for (let i = 0; i < data.length; i++) {
-//     if (typeof (data[i]) === 'number') {
-//         data[i] = data[i] * 2;
-//     } else if (typeof (data[i]) === 'string') {
-//         data[i] = `${data[i]} - done`;
+//         console.log('error');
+//         i--;
 //     }
 // }
 
-
-// console.log(data);
-
-// const data = [5, 10, 'Shopping', 20, 'Homework'];
-// const result = [];
-
-// for (let i = 1; i <= data.length; i++) {
-//     result[i - 1] = data[data.length - i];
+// if (personaMpvieDB.count < 10) {
+//     console.log('Просмотренно довольно мало фильмов');
+// } else if (personaMpvieDB.count >= 10 && personaMpvieDB.count < 30) {
+//     console.log('Вы классический зритель');
+// } else if (personaMpvieDB.count >= 30) {
+//     console.log('Вы киноман');
+// } else {
+//     console.log('Произошла ошибка');
 // }
 
-// console.log(result);
+// console.log(personaMpvieDB);
 
-// const lines = 5;
-// let result = '';
 
-// for (let i = 0; i <= lines; i++) {
-//     for (let j = 0; j < lines - i; j++) {
-//         result += " ";
-//     }
-//     for (let j = 0; j < 2 * i + 1; j++) {
-//         result += "*";
-//     }
-//     result += "\n";
-// }
+//  Lesson Методы и свойства строк и чисел
 
-// for (let i = 0; i < lines; i++) {
-//     for (let j = 0; j < lines - i; j++) {
-//         result += " ";
-//     }
-//     for (let j = 0; j < 2 * i + 1; j++) {
-//         result += "*";
-//     }
-//     result += "\n";
-// }
+// const str = "tEsT";
 
-// console.log(result);
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("uitxz"));
+
+const logg = "Hello world";
+
+console.log(logg.slice(6));
+
+console.log(logg.substr(6, 5));
+
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+
+console.log(parseInt(test));
+console.log(parseFloat(test));
